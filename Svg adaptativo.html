@@ -105,7 +105,7 @@
             <div class="landscape"></div>
         </article>
 
-        
+
         <script>
             // Hay muchos tipos de inputs: https://www.w3schools.com/html/html_form_input_types.asp
             // Acá usaremos cuatro: radio, range, color y checkbox
@@ -136,14 +136,24 @@
             }
 
             async function quinta() {
-                const consulta = await fetch("https://raw.githubusercontent.com/valflores8/Dnoweb-clase07/refs/heads/main/Csv%20to%20json%20peso%20grandes%20felinos.json");
+                const consulta = await fetch("https://raw.githubusercontent.com/valflores8/Dnoweb-clase07/refs/heads/main/csv_felinos.json");
                 const data = await consulta.json();
                 console.log(data);
                 const svgMobile = document.querySelectorAll("div.portrait")[0];
                 const svgOther = document.querySelectorAll("div.landscape")[0];
                 data.forEach((v, i) => {
-                    svgMobile.innerHTML += `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 ${v.comparado*2}"><circle cx="12" cy="${v.comparado}" r="${v.comparado}" fill="white"></circle><text x="${v.comparado + 13}" y="${v.comparado+0.3}">${v.planeta}</text></svg>`;
-                    svgOther.innerHTML += `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 33"><circle cx="12" cy="13" r="${v.comparado}" fill="black"></circle><text x="12" y="30">${v.planeta}</text></svg>`;
+                    svgMobile.innerHTML += 
+                    `<svg xmlns="http://www.w3.org/2000/svg" 
+                    viewBox="0 0 24 ${v.comparado*2}">
+                    <circle cx="12" cy="${v.comparado}" r="${v.comparado}" fill="white"></circle>
+                    <text x="${v.comparado + 13}" y="${v.comparado+0.3}">${v.Nombre}</text>
+                    </svg>`;
+
+                    svgOther.innerHTML += 
+                    `<svg xmlns="http://www.w3.org/2000/svg" 
+                    viewBox="0 0 24 33">
+                    <circle cx="12" cy="13" r="${v.comparado}" fill="black"></circle>
+                    <text x="12" y="30">${v.Nombre}</text></svg>`;
                 });
             }
             quinta().catch((error) => console.error(error));
