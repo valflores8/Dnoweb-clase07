@@ -87,6 +87,8 @@
             <p>Fill: <input type="color" value="#FFFFFF" onchange="tercera(this.value)" /></p>
 
         </article>
+
+
         <article>
             <h2>Del setAttribute al AddClass</h2>
             <!--usando input type="checkbox"-->
@@ -95,11 +97,15 @@
                 <img src="https://raw.githubusercontent.com/profesorfaco/opr/refs/heads/main/clase-07/img/mapache.png" />
             </figure>
         </article>
+
+
         <article>
             <h2>Y cerremos con "un SVG responsive"</h2>
             <div class="portrait"></div>
             <div class="landscape"></div>
         </article>
+
+        
         <script>
             // Hay muchos tipos de inputs: https://www.w3schools.com/html/html_form_input_types.asp
             // Acá usaremos cuatro: radio, range, color y checkbox
@@ -130,7 +136,7 @@
             }
 
             async function quinta() {
-                const consulta = await fetch("https://raw.githubusercontent.com/profesorfaco/opr/refs/heads/main/clase-07/planetas.json");
+                const consulta = await fetch("https://raw.githubusercontent.com/valflores8/Dnoweb-clase07/refs/heads/main/Csv%20to%20json%20peso%20grandes%20felinos.json");
                 const data = await consulta.json();
                 console.log(data);
                 const svgMobile = document.querySelectorAll("div.portrait")[0];
