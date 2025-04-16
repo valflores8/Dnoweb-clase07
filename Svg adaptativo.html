@@ -65,18 +65,27 @@
 
             <!--un svg que tomo de https://feathericons.com/-->
 
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                <rect x="0.9" y="0.9" width="22.2" height="22.2"></rect>
-                <circle cx="12" cy="12" r="10"></circle>
-                <path d="M8 14s1.5 2 4 2 4-2 4-2"></path>
-                <line x1="9" y1="9" x2="9.01" y2="9"></line>
-                <line x1="15" y1="9" x2="15.01" y2="9"></line>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-sun">
+                    <circle cx="12" cy="12" r="5"></circle>
+                    <line x1="12" y1="1" x2="12" y2="3"></line>
+                    <line x1="12" y1="21" x2="12" y2="23"></line>
+                    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                    <line x1="1" y1="12" x2="3" y2="12"></line>
+                    <line x1="21" y1="12" x2="23" y2="12"></line>
+                    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                </svg>
+
+
             </svg>
+
             <!--usando input type="range"-->
             <p><input type="range" min="0" max="359" step="1" value="0" onchange="segunda(this.value)" /></p>
             <p>Stroke: HSL(<span>0</span>,100%,50%)</p>
             <!--usando input type="color"-->
             <p>Fill: <input type="color" value="#FFFFFF" onchange="tercera(this.value)" /></p>
+
         </article>
         <article>
             <h2>Del setAttribute al AddClass</h2>
