@@ -2,61 +2,61 @@
  {
    "Nombre": "Tigre siveriano",
    "Peso": 280,
-   "comparativa": 4.516129
+   "comparado": 4.516129
  },
  {
    "Nombre": "tigre bengala",
    "Peso": 200,
-   "comparativa": 3.225806
+   "comparado": 3.225806
  },
  {
    "Nombre": "León",
    "Peso": 180,
-   "comparativa": 2.903226
+   "comparado": 2.903226
  },
  {
    "Nombre": "Jaguar",
    "Peso": 93,
-   "comparativa": 1.5
+   "comparado": 1.5
  },
  {
    "Nombre": "Puma",
    "Peso": 85,
-   "comparativa": 1.370968
+   "comparado": 1.370968
  },
  {
    "Nombre": "Leopardo",
    "Peso": 60,
-   "comparativa": 0.967742
+   "comparado": 0.967742
  },
  {
    "Nombre": "Pantera de las nieves",
    "Peso": 30,
-   "comparativa": 0.483871
+   "comparado": 0.483871
  },
  {
    "Nombre": "Guepardo",
    "Peso": 45,
-   "comparativa": 0.725806
+   "comparado": 0.725806
  },
  {
    "Nombre": "Lince europeo",
    "Peso": 21,
-   "comparativa": 0.33871
+   "comparado": 0.33871
  },
  {
    "Nombre": "Leopardo de las nieves ",
    "Peso": 40,
-   "comparativa": 0.645161
+   "comparado": 0.645161
  },
  {
    "Nombre": "Gato Maine Coon",
    "Peso": 9,
-   "comparativa": 0.145161
+   "comparado": 0.145161
  },
  {
    "Nombre": "Gato común",
    "Peso": 4,
-   "comparativa": 0.064516
+   "comparado": 0.064516
  }
 ]
